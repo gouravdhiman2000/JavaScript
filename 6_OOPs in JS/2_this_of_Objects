@@ -1,0 +1,27 @@
+const movie = {
+    title: "The Shawshank Redemption",
+    year: 1994,
+    director: "Frank Darabont",
+    cast: {
+        main_lead:'Tim Robbins', others:'Morgan Freeman'
+    },
+    genres: ["Drama"],
+    rating: 9.2,
+
+    getDeatails(){
+        console.log(`Title: ${this.title}, Year: ${this.year}, Director: ${this.director}, Cast: ${this.cast}, Genres : ${this.genres}, Rating : ${this.rating}`);
+    },
+    getMoviedetails(detail){
+        console.log(movie[detail]);
+    }
+};
+
+console.log(movie.title);
+movie.getDeatails();
+
+console.log(movie.cast.main_lead);
+
+const details = "title";
+movie.getMoviedetails(details);
+
+
